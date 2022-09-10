@@ -1,4 +1,4 @@
-##CKA Prep
+## CKA Prep
 
 This is my preparation to CKA.
 
