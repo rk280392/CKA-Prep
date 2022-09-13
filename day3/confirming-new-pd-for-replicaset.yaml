@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-matching-replicaset
+  labels:
+    env: prod
+spec:
+  containers:
+    - name: test0
+      image: nginx
