@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dynamic-volume-pod
+spec:
+  containers:
+    - name: dynamic-vol-test
+      image: nginx:alpine
+      volumeMounts:
+        - name: volv
+          mountPath: /data
+  volumes:
+    - name: volv
+      persistentVolumeClaim:
+        claimName: longhorn-vol-pvc 
